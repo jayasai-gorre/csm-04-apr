@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSE (AI & ML) | Contact</title>
+<!-- Stylesheets -->
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+<link href="assets/css/responsive.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+<link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+<style>
+	  .banner-img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Hide mobile image by default */
+    .mobile {
+        display: none;
+    }
+
+    /* Show mobile image on screens smaller than 768px (typical tablet and mobile sizes) */
+    @media only screen and (max-width: 768px) {
+        .desktop {
+            display: none;
+        }
+        .mobile {
+            display: block;
+        }
+    }
+	@import url('https://fonts.googleapis.com/css?family=Arimo:400,700&display=swap');
+
+	#aiml-tabs .warpper{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+}
+#aiml-tabs .tab{
+  cursor: pointer;
+  padding:10px 20px;
+  margin:5px 2px;
+  background:#000;
+  display:inline-block;
+  color:#fff;
+  border-radius:3px 3px 0px 0px;
+  box-shadow: 0 0.5rem 0.8rem #00000080;
+  border-color: aqua;
+}
+#aiml-tabs .panels{
+  background:#fffffff6;
+  box-shadow: 0 2rem 2rem #00000080;
+  min-height:200px;
+  width:100%;
+  border-color:aqua;
+  max-width:1200px; 
+  border-radius:5px;
+  overflow:hidden;
+  padding:20px;  
+}
+#aiml-tabs .panel{
+  display:none;
+  animation: fadein .8s;
+}
+#aiml-tabs .warpper {
+	background-image: url(./assets/images/background/pattern-2.png);
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+#aiml-tabs .panel-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#aiml-tabs .radio {
+  display: none;
+}
+
+#zero:checked ~ .panels #zero-panel,
+#one:checked ~ .panels #one-panel,
+#two:checked ~ .panels #two-panel,
+#three:checked ~ .panels #three-panel,
+#four:checked ~ .panels #four-panel,
+#five:checked ~ .panels #five-panel,
+#six:checked ~ .panels #six-panel,
+#seven:checked ~ .panels #seven-panel,
+#eight:checked ~ .panels #eight-panel,
+#nine:checked ~ .panels #nine-panel,
+#ten:checked ~ .panels #ten-panel,
+#eleven:checked ~ .panels #eleven-panel,
+#twelve:checked ~ .panels #twelve-panel {
+  display: block;
+}
+
+#zero:checked ~ .tabs #zero-tab,
+#one:checked ~ .tabs #one-tab,
+#two:checked ~ .tabs #two-tab,
+#three:checked ~ .tabs #three-tab,
+#four:checked ~ .tabs #four-tab,
+#five:checked ~ .tabs #five-tab,
+#six:checked ~ .tabs #six-tab,
+#seven:checked ~ .tabs #seven-tab,
+#eight:checked ~ .tabs #eight-tab,
+#nine:checked ~ .tabs #nine-tab,
+#ten:checked ~ .tabs #ten-tab,
+#eleven:checked ~ .tabs #eleven-tab,
+#twelve:checked ~ .tabs #twelve-tab {
+  background-color: #3498db;
+  color: #2c3e50;
+  border-top: 3px solid #2980b9;
+}
+
+/* Panel styles */
+#zero-panel,
+#one-panel,
+#two-panel,
+#three-panel,
+#four-panel,
+#five-panel,
+#six-panel,
+#seven-panel,
+#eight-panel,
+#nine-panel,
+#ten-panel,
+#eleven-panel,
+#twelve-panel {
+  display: none;
+}
+
+/* Individual panel styles */
+#zero-panel {
+  background-color: #3498db;
+  color: #2c3e50;
+}
+
+#one-panel {
+  background-color: #2ecc71;
+  color: #34495e;
+}
+
+#two-panel {
+  background-color: #e74c3c;
+  color: #2c3e50;
+}
+
+#three-panel {
+  background-color: #9b59b6;
+  color: #34495e;
+}
+
+#four-panel {
+  background-color: #f39c12;
+  color: #2c3e50;
+}
+
+#five-panel {
+  background-color: #1abc9c;
+  color: #34495e;
+}
+
+#six-panel {
+  background-color: #1abc9c;
+  color: #34495e;
+}
+
+#seven-panel {
+  background-color: #1abc9c;
+  color: #34495e;
+}
+
+#eight-panel {
+  background-color: #1abc9c;
+  color: #34495e;
+}
+
+#nine-panel {
+  background-color: #1abc9c;
+  color: #34495e;
+}
+
+#ten-panel {
+  background-color: #1abc9c;
+  color: #34495e;
+}
+
+#eleven-panel {
+  background-color: #1abc9c;
+  color: #34495e;
+}
+
+#twelve-panel {
+  background-color: #1abc9c;
+  color: #34495e;
+}
+
+
+.panel p {
+  color: white;
+}
+
+.panel {
+  padding: 10px;
+  border-radius: 10px;
+}
+		@media only screen and (max-width: 768px) {
+        .custom-section {
+        display: none;
+    }
+  }
+  .custom-section {
+			height: 20vh;
+            width: 100%;
+			background-color: #000;
+		}
+	#slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1000px; /* Adjust max-width as needed */
+    height: auto;
+    margin-top: 0px; /* Center the slider */
+  }
+
+  .slider-image {
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+  #prevBtn,
+  #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  #prevBtn {
+    left: 10px;
+  }
+
+  #nextBtn {
+    right: 10px;
+  }
+  #news-container {
+	float: right;
+	width: 500px;
+    height: 500px;
+    margin-right: 10px;
+	margin-top: 5px;
+  }
+  .news {
+  box-shadow: inset 0 -15px 30px rgba(0,0,0,0.4), 0 5px 10px rgba(0,0,0,0.5);
+  width: 350px;
+  height: 30px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 4px;
+  padding: 3px;
+  -webkit-user-select: none
+} 
+.full-width{
+    width: 100%;
+}
+.news span {
+  float: left;
+  color: #fff;
+  padding: 6px;
+  position: relative;
+  top: 1%;
+  border-radius: 4px;
+  box-shadow: inset 0 -15px 30px rgba(0,0,0,0.4);
+  font: 16px 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-user-select: none;
+  cursor: pointer
+}
+
+.news ul {
+  float: left;
+  padding-left: 20px;
+  animation: ticker 10s cubic-bezier(1, 0, .5, 0) infinite;
+  -webkit-user-select: none
+}
+
+.news ul li {line-height: 30px; list-style: none }
+
+.news ul li a {
+  color: #fff;
+  text-decoration: none;
+  font: 14px Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-user-select: none
+}
+@keyframes ticker {
+	0%   {margin-top: 0}
+	25%  {margin-top: -30px}
+	50%  {margin-top: -60px}
+	75%  {margin-top: -90px}
+	100% {margin-top: 0}
+}
+.news ul:hover { animation-play-state: paused }
+.news span:hover+ul { animation-play-state: paused }
+/* OTHER COLORS */
+.blue { background: #347fd0 }
+.blue span { background: #2c66be }
+.red { background: #d23435 }
+.red span { background: #c22b2c }
+.green { background: #699B67 }
+.green span { background: #547d52 }
+.magenta { background: #b63ace }
+.magenta span { background: #842696 }
+.yellow {background : yellow}
+.yellow span {background : yellow}
+</style>
+</style>
+</head>
+
+<body class="hidden-bar-wrapper">
+	<div class="pvpsit-banner">
+		<!-- Image for laptop/desktop -->
+		<img src="./assets/images/main-slider/banner.jpg" class="banner-img desktop" style="height:120px ;">
+		<!-- Image for mobile -->
+		<img src="./assets/images/prasad.png" class="banner-img mobile">
+	</div>
+	<div class="page-wrapper">
+ 	
+		<!-- Preloader -->
+		<div class="preloader"></div>
+		<!-- End Preloader -->
+		 
+		 <!-- Header Style One -->
+		<header class="main-header">
+			
+			<!-- Header Top -->
+			<video style="width: 100%;" muted autoplay>
+				<source src="./assets/images/main-slider/aiml-video.mp4" type="video/mp4">
+			</video>
+			<!-- <div class="header-top">
+				<video style="display: inline; z-index: 50;" src="./assets/images/main-slider/banner-2.mp4" autoplay></video>
+				<div class="auto-container">
+					<div class="inner-container clearfix">
+						
+						Top Left
+						<div class="top-left clearfix">
+							<div class="text"><span>Working timings:</span> Monday to Saturday 9 AM - 5 PM</div>
+						</div>
+						
+						Top Right
+						<div class="top-right pull-right clearfix">
+							Social Box
+							<ul class="social-box">
+								<li><a href="https://www.facebook.com/" class="fa fa-facebook-f"></a></li>
+								<li><a href="https://www.twitter.com/" class="fa fa-twitter"></a></li>
+								<li><a href="https://www.behance.com/" class="fa fa-behance"></a></li>
+								<li><a href="https://www.linkedin.com/" class="fa fa-linkedin"></a></li>
+								<li><a href="https://youtube.com/" class="fa fa-youtube-play"></a></li>
+							</ul>
+							<div class="text">Call for consultation: <a href="tel:+0866-2581699">0866-2581699</a></div>
+						</div>
+						
+					</div>
+				</div>
+			</div> -->
+			
+			<div class="header-lower">
+				<div class="auto-container clearfix">
+
+					<!-- Logo Box 
+					<div class="pull-left logo-box">
+						<div class="logo"><a href="index.html"><img src="assets/images/cse-removebg-preview.png" alt="" title=""></a></div>
+					</div>
+					-->
+					<!-- Nav Outer -->
+					<div class="nav-outer clearfix">
+						<!-- Mobile Navigation Toggler -->
+						<div class="mobile-nav-toggler"><span class="icon flaticon-menu"></span></div>
+						<!-- Main Menu -->
+						<nav class="main-menu navbar-expand-md">
+							<div class="navbar-header">
+								<!-- Toggle Button -->
+								<button class="navbar-toggler" type="button" data-toggle="collapse"
+									data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+									aria-expanded="false" aria-label="Toggle navigation">
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div>
+
+							<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+								<ul class="navigation clearfix">
+									<li><a href="index.html">Home</a></li>
+									<!-- <li class="current dropdown"><a href="#">Home</a> -->
+									<!-- <ul>
+										<li><a href="index.html">Homepage One</a></li>
+										<li><a href="index-2.html">Homepage Two</a></li>
+										<li><a href="index-3.html">Homepage Three</a></li>
+										<li class="dropdown"><a href="#">Header Styles</a>
+											<ul>
+												<li><a href="index.html">Header Style One</a></li>
+												<li><a href="index-2.html">Header Style Two</a></li>
+												<li><a href="index-3.html">Header Style Three</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li> -->
+									<li><a href="index.html">About Department</a> <!-- class="dropdown"-->
+										<!-- <ul>
+											<li><a href="#one-tab">Vision</a></li> href="about.html"
+											<li><a href="#two-tab">Mission</a></li> href= "faq.html"
+											<li><a href="#three-tab">PEO's</a></li>  href="price.html"
+											<li><a href="#four-tab">PSO's</a></li>
+											<li><a href="#five-tab">PO's</a></li>
+											<li class="dropdown"><a href="#">Our Team</a>
+												<ul>
+													<li><a href="mentors.html">Team</a></li>
+													<li><a href="mentor-detail.html">Team Detail</a></li>
+												</ul>
+											</li>
+										</ul> -->
+									</li>
+
+									<li class="dropdown"><a href="#aiml-tabs">Course Structure & Syllabus</a>
+										<!-- class="dropdown"-->
+										<ul>
+											<li><a target="_blank"
+													href="https://www.pvpsiddhartha.ac.in/syllabus_csm_20.html">PVP20</a>
+											</li> <!-- href="about.html" -->
+											<li><a target="_blank"
+													href="https://www.pvpsiddhartha.ac.in/syllabus_aiml_23.html">PVP23</a>
+											</li> <!-- href= "faq.html" -->
+										</ul>
+
+									</li>
+
+									<!--  class="dropdown" -->
+									<!-- <ul>
+											<li><a href="#time-table">Time Tables</a></li>  href="services.html"
+											<li><a>Old Question Papers</a></li> href="service-detail.html"
+											<li><a></a></li>
+										</ul> -->
+									<!-- </li> -->
+									<!-- <li><a target="_blank" href="https://www.pvpsiddhartha.ac.in/syllabus_csm_20.html">Course Structure & Syllabus</a></li> -->
+									<li><a target="_blank"
+											href="https://www.pvpsiddhartha.ac.in/dep_csm/docs/II-IITime_Table_23-24.pdf">Time
+											Tables</a></li>
+
+
+									<!-- <li class="dropdown"><a href="#">Staff</a>
+										<ul>
+											<li><a>Mentors</a></li>
+											<li><a>Teaching</a></li>  href="services.html"
+											<li><a>Non-Teaching</a></li>  href="service-detail.html"
+										</ul>
+									</li> -->
+									<!-- <li class="dropdown"><a href="#">Events</a>
+										<ul>
+											<li><a href="./events.html">Technical Events</a></li>  href="portfolio.html"
+											<li><a>Cultural Events</a></li>  href="portfolio-detail.html"
+										</ul>
+									</li> -->
+
+									<li><a href="infrastructure.html">Labs</a></li>
+									<li><a href="infrastructure.html">Classrooms</a></li>
+									<li><a href="infrastructure.html">Gallery</a></li>
+									<li class="dropdown"><a href="#">Student Life</a>
+										<ul>
+											<li><a target="_blank"
+													href="https://www.pvpsiddhartha.ac.in/department_sport.html">Sports</a>
+											</li> <!--  href="courses.html" -->
+											<li><a target="_blank"
+													href="https://www.pvpsiddhartha.ac.in/collegeculturalclub.html">Cultural
+													Clubs</a></li>
+											<li><a href="https://www.pvpsiddhartha.ac.in/nss.html#"
+													target="_blank">NSS</a></li>
+											<li><a href="https://www.pvpsiddhartha.ac.in/ncc.html"
+													target="_blank">NCC</a></li>
+											<li><a href="https://www.pvpsiddhartha.ac.in/yoga_n.html"
+													target="_blank">Yoga</a></li>
+											<!-- <li><a href="course-detail.html">Courses Detail</a></li> -->
+										</ul>
+									</li>
+									<!-- <li class="dropdown"><a href="#">Blog</a>
+										<ul>
+											<li><a href="blog.html">Our Blog</a></li>
+											<li><a href="blog-detail.html">Blog Detail</a></li>
+										</ul>
+									</li> -->
+									<li><a href="contact.html">Contact</a></li>
+								</ul>
+							</div>
+						</nav>
+
+
+						<!-- Main Menu End-->
+						<div class="outer-box clearfix">
+
+							<!-- Search Btn -->
+							<!-- <div class="search-box-btn transition-300ms"><span class="icon fa fa-search"></span></div> -->
+
+							<!-- Nav Btn -->
+							<div class="nav-btn navSidebar-button transition-300ms"><span
+									class="icon flaticon-menu-1"></span></div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!-- End Header Lower -->
+
+			<!-- Sticky Header  -->
+			<div class="sticky-header">
+				<div class="auto-container clearfix">
+					<!--Logo-->
+					<!-- <div class="logo pull-left">
+						<a href="index.html" title=""><img src="assets/images/aiml-2-removebg-preview.png" alt="" title=""></a>
+					</div> -->
+					<!--Right Col-->
+					<div class="pull-right">
+
+						<!-- Main Menu -->
+						<nav class="main-menu">
+							<!--Keep This Empty / Menu will come through Javascript-->
+						</nav>
+						<!-- Main Menu End-->
+
+						<!-- Mobile Navigation Toggler -->
+						<div class="mobile-nav-toggler"><span class="icon flaticon-menu-1"></span></div>
+
+					</div>
+				</div>
+			</div><!-- End Sticky Menu -->
+
+			<!-- Mobile Menu  -->
+			<div class="mobile-menu">
+				<div class="menu-backdrop"></div>
+				<div class="close-btn"><span class="icon flaticon-multiply"></span></div>
+
+				<nav class="menu-box">
+					<!-- <div class="nav-logo"><a href="index.html"><img src="assets/images/logo-small.png" alt="" title=""></a></div> -->
+					<div class="menu-outer">
+						<!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+					</div>
+				</nav>
+			</div><!-- End Mobile Menu -->
+		</header>
+		<!-- End Main Header -->
+
+		<!-- Sidebar Cart Item -->
+		<div class="xs-sidebar-group info-group">
+			<div class="xs-overlay xs-bg-black"></div>
+			<div class="xs-sidebar-widget">
+				<div class="sidebar-widget-container">
+					<div class="widget-heading">
+						<a href="#" class="close-side-widget">
+							X
+						</a>
+					</div>
+					<div class="sidebar-textwidget">
+
+						<!-- Sidebar Info Content -->
+						<div class="sidebar-info-contents">
+							<div class="content-inner">
+								<div class="logo">
+									<a href="index.html">
+										<h1 style="color: white; font-size: 36px;">CSE ( AI & ML )</h1>
+								</div>
+								<div class="content-box">
+									<h4>About Us</h4>
+									<p class="text">The Department of CSE (Artificial Intelligence and Machine Learning)
+										offers B. Tech degree, which was established in the year 2022 with a mission of
+										producing students with a sound understanding of the fundamentals of both theory
+										and practice of Artificial Intelligence and Machine Learning. The mission is
+										also to mold them to attain excellent leadership qualities thereby making them
+										competent in the software, hardware and research arena.</p>
+									<a href="contact.html" class="theme-btn btn-style-one"><span
+											class="txt">Contact</span></a>
+								</div>
+								<div class="contact-info">
+									<h4>Contact Info</h4>
+									<ul class="list-style-one">
+										<li><span class="icon fa fa-location-arrow"></span>Kanuru,Vijayawada-520 007
+										</li>
+										<li><span class="icon fa fa-phone"></span>0866-2581699</li>
+										<li><span class="icon fa fa-envelope"></span>principal@pvpsiddhartha.ac.in</li>
+										<li><span class="icon fa fa-clock-o"></span>Week Days: 09.00 to 17.00 Sunday:
+											Closed</li>
+									</ul>
+								</div>
+								<!-- Social Box -->
+								<ul class="social-box">
+									<li><a href="https://www.facebook.com/" class="fa fa-facebook-f"></a></li>
+									<li><a href="https://www.twitter.com/" class="fa fa-twitter"></a></li>
+									<li><a href="https://www.linkedin.com/" class="fa fa-linkedin"></a></li>
+									<li><a href="https://youtube.com/" class="fa fa-youtube-play"></a></li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END sidebar widget item -->
+
+
+	
+	<!-- Page Title Section -->
+	<section class="page-title" style="background-image: url(assets/images/background/consultation\ main.png)">
+		<div class="auto-container">
+			<div class="content">
+				<div class="text">Welcome to CSE(AI & ML ) Department</div>
+				<h1>Get In Touch</h1>
+			</div>
+			<div class="breadcrumb-outer">
+				<ul class="page-breadcrumb">
+					<li><a href="index.html">Home</a></li>
+					<li>Contact</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<!-- End Page Title Section -->
+	
+	<!-- Map Section -->
+	<section class="contact-map-section">
+		<div class="auto-container">
+			<div class="clearfix">
+				<div class="map-box">
+					<h4>Location Info</h4>
+					<ul class="contact-list">
+						<li>
+							<span class="icon flaticon-telephone"></span>
+							Kanuru  <br> Vijayawada, Andhra Pradesh-520007<br>
+							<a href="https://www.google.com/maps/dir/16.5044922,80.7103525/Prasad+V.+Potluri+Siddhartha+Institute+Of+Technology,+Chalasani+Nagar,+Kanuru,+Vijayawada,+Andhra+Pradesh+520007/@16.5080818,80.7000005,15.68z/data=!4m18!1m8!3m7!1s0x3a35fb3d5f7810a9:0x4a6d6804b71db09!2sPrasad+V.+Potluri+Siddhartha+Institute+Of+Technology!8m2!3d16.4876606!4d80.6941328!15sCg5wdnAgc2lkZGhhcnRoYZIBB2NvbGxlZ2XgAQA!16s%2Fg%2F1tdflpms!4m8!1m1!4e1!1m5!1m1!1s0x3a35fb3d5f7810a9:0x4a6d6804b71db09!2m2!1d80.6941328!2d16.4876606?entry=ttu" class="direction">Get Direction</a>
+						</li>
+						<li>
+							<span class="icon flaticon-email-1"></span>
+							<a href="mailto:info@companyname.com">pvpsit@gmail.com</a>
+						</li>
+						<li>
+							<span class="icon flaticon-clock"></span>
+							Monday-Saturday: 9:00am-5:00pm
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="outer-container">
+			<!-- Map Boxed -->
+			<div class="map-boxed">
+				<!--Map Outer-->
+				<div class="map-outer">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.756540202721!2d80.69160732436852!3d16.48786087809642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35fb3d5f7810a9%3A0x4a6d6804b71db09!2sPrasad%20V.%20Potluri%20Siddhartha%20Institute%20Of%20Technology!5e0!3m2!1sen!2sin!4v1707675647881!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Map Section -->
+	
+	<!-- Contact Form Section -->
+	<section class="contact-form-section">
+		<div class="auto-container">
+			<div class="row clearfix">
+			
+				<!-- Image Column -->
+				<div class="image-column col-lg-6 col-md-12 col-sm-12">
+					<div class="inner-column">
+						<div class="image">
+							<img src="assets/images/resource/consultation 1.png" alt="" />
+						</div>
+						<div class="image-two">
+							<img src="assets/images/resource/consultation 2.png" alt="" />
+						</div>
+					</div>
+				</div>
+				
+				<!-- Form Column -->
+				<div class="form-column col-lg-6 col-md-12 col-sm-12">
+					<div class="inner-column">
+						<div class="sec-title">
+							<div class="title color-three">Get In Touch</div>
+							<h2>Enter Your Details</h2>
+						</div>
+						
+						<!-- Contact Form -->
+						<div class="contact-form">
+							<form action="https://api.web3forms.com/submit" method="POST">
+								<div class="row clearfix">
+									<input type="hidden" name="access_key" value="9b54665c-da86-463c-99d5-76d02fc3f506">
+
+									<!-- Form Group -->
+									<div class="form-group col-lg-6 col-md-6 col-sm-12">
+										<span class="icon flaticon-user-4"></span>
+										<input type="text" name="username" placeholder="Enter Name" required>
+									</div>
+									
+									<!-- Form Group -->
+									<div class="form-group col-lg-6 col-md-6 col-sm-12">
+										<span class="icon flaticon-envelope"></span>
+										<input type="email" name="email" placeholder="E-Mail Address" required>
+									</div>
+									<!-- Form Group -->
+									<div class="form-group col-lg-6 col-md-6 col-sm-12">
+										<span class="icon flaticon-telephone"></span>
+										<input type="tel" name="phone" placeholder="Phone Number" required>
+									</div>
+									
+									<!--Form Group-->
+									<div class="form-group col-lg-12 col-md-12 col-sm-12">
+										<span class="icon flaticon-notebook"></span>
+										<select name="Category" class="custom-select-box">
+											<option>I want to inquire about</option>
+											<option>Admissions Process</option>
+											<option>Academic Programs</option>
+											<option>Scholarships and Financial Aid</option>
+											<option>Campus Facilities and Resources</option>
+										</select>
+									</div>
+									
+									<!-- Form Group -->
+									<div class="form-group col-lg-12 col-md-12 col-sm-12">
+										<span class="icon flaticon-pen"></span>
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+									
+									<!-- Form Group -->
+									<div class="form-group col-lg-12 col-md-12 col-sm-12">
+										<button class="theme-btn btn-style-three" type="submit" name="submit-form "><span class="txt">Submit</span></button>
+									</div>
+									
+								</div>
+							</form>
+								
+						</div>
+						<!-- eND Contact Form -->
+						
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<!-- End Contact Form Section -->
+	
+	<!-- Main Footer -->
+    <!-- Main Footer -->
+    <footer class="main-footer">
+    	<div class="auto-container">
+        	<!-- Widgets Section -->
+            <div class="widgets-section">
+            	<div class="row clearfix">
+                	
+                    <!-- Column -->
+                    <div class="big-column col-lg-6 col-md-12 col-sm-12">
+						<div class="row clearfix">
+						
+                        	<!-- Footer Column -->
+                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                                <div class="footer-widget logo-widget">
+									<div class="logo">
+										<a href="index.html"><h1 style="color: white; font-size: 36px;">CSE ( AI & ML )</h1>
+										</div>
+									<div class="text">At PVPSIT, our AI and ML Department fosters innovation, guiding students through cutting-edge AI algorithms and practical applications. We emphasize hands-on learning, empowering them to tackle real-world challenges with data-driven solutions.</div>
+								</div>
+							</div>
+							
+							<!-- Footer Column -->
+                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                                <div class="footer-widget links-widget">
+									<h5>Pages</h5>
+									<div class="row clearfix">
+										<!-- Column -->
+										<div class="column col-lg-6 col-md-6 col-sm-12">
+											<ul class="list-link">
+												<li><a href="#">Home</a></li>
+												<li><a href="#">About</a></li>
+												<li><a href="#">Resources</a></li>
+												<li><a href="#">Staff</a></li>
+												<li><a href="#">Events</a></li>
+											</ul>
+										</div>
+										<!-- Column -->
+										<div class="column col-lg-6 col-md-6 col-sm-12">
+											<ul class="list-link">
+												<li><a href="#">Student Life</a></li>
+												<li><a href="#">Contact</a></li>
+												<!-- <li><a href="#">Support</a></li>
+												<li><a href="#">Price & Plans</a></li> -->
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					
+					<!-- Column -->
+                    <div class="big-column col-lg-6 col-md-12 col-sm-12">
+						<div class="row clearfix">
+							
+							<!-- Footer Column -->
+                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                                <div class="footer-widget info-widget">
+									<h5>Get In Touch</h5>
+									<ul class="contact-info-list">
+										<li><span>Address</span><a href="#">Kanuru, Vijayawada <br> Andhra Pradesh-520007</a></li>
+										<!-- <li><span>Sub Office</span><a href="#">34, A/Front Tower, <br> London, UK</a></li> -->
+									</ul>
+								</div>
+							</div>
+							
+							<!-- Footer Column -->
+                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                                <div class="footer-widget newsletter-widget">
+									<h5>Newsletter</h5>
+									<!-- Newsletter Form -->
+									<div class="newsletter-form">
+										<form method="post" action="contact.html">
+											<div class="form-group">
+												<span class="icon flaticon-email"></span>
+												<input type="email" name="search-field" value="" placeholder="Email address" required>
+												<button type="submit" class="theme-btn submit-btn">Subscribe Now<span class="arrow flaticon-right-arrow-1"></span></button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="footer-bottom">
+				<div class="clearfix">
+					<div class="pull-left">
+						<div class="copyright" style="justify-content: center;">Copyright By &copy; <a href="index.html">CSE ( AI & ML )</a> - 2024</div>
+					</div>
+					<!-- <div class="pull-right">
+						<div class="payments"><img src="assets/images/icons/payment.png" alt="" /></div>
+					</div> -->
+				</div>
+			</div>
+			
+		</div>
+	</footer>
+	
+	<!-- End Main Footer -->
+	
+</div>
+<!-- End PageWrapper -->
+
+<!-- Search Popup -->
+<div class="search-popup">
+	<button class="close-search style-two"><span class="flaticon-cancel-1"></span></button>
+	<button class="close-search"><span class="flaticon-up-arrow"></span></button>
+	<form method="post" action="blog.html">
+		<div class="form-group">
+			<input type="search" name="search-field" value="" placeholder="Search Here" required="">
+			<button type="submit"><i class="fa fa-search"></i></button>
+		</div>
+	</form>
+</div>
+<!-- End Header Search -->
+
+<!-- Scroll To Top -->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-up"></span></div>
+
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+
+<!-- Revolution Slider -->
+<script src="assets/plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
+<script src="assets/plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
+<script src="assets/plugins/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+<script src="assets/plugins/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+<script src="assets/plugins/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script src="assets/plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="assets/plugins/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+<script src="assets/plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+<script src="assets/plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+<script src="assets/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="assets/plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
+<script src="assets/plugins/revolution/js/main-slider-script.js"></script>
+<!-- For Js Library -->
+
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/jquery.fancybox.js"></script>
+<script src="assets/js/appear.js"></script>
+<script src="assets/js/parallax.min.js"></script>
+<script src="assets/js/tilt.jquery.min.js"></script>
+<script src="assets/js/jquery.paroller.min.js"></script>
+<script src="assets/js/owl.js"></script>
+<script src="assets/js/wow.js"></script>
+<script src="assets/js/mixitup.js"></script>
+<script src="assets/js/nav-tool.js"></script>
+<script src="assets/js/validate.js"></script>
+<script src="assets/js/jquery-ui.js"></script>
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>
