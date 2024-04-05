@@ -1,0 +1,64 @@
+/* Base styles */
+.board-of-studies-panel {
+    margin: 20px auto;
+    max-width: 1000px;
+    overflow-x: auto;
+}
+
+.bos-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.bos-heading,
+.bos-position,
+.bos-name,
+.bos-contact,
+.bos-email {
+    text-align: center;
+}
+
+.bos-position,
+.bos-name,
+.bos-contact,
+.bos-email {
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.bos-heading {
+    color: #1d8c68;
+}
+
+@media (max-width: 768px) {
+    .bos-table {
+        overflow-x: auto;
+    }
+
+    .bos-position,
+    .bos-name,
+    .bos-contact,
+    .bos-email {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+/* Decrease size of h4 */
+.bos-heading {
+    font-size: 24px;
+}
+
+.links a {
+    color: blue;
+}
+
+.bos-header {
+    background-color: #e63a23;
+    color: #ffffff;
+}
+
+td {
+    color: black;
+}
