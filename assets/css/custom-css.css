@@ -25,11 +25,11 @@
   cursor: pointer;
   padding: 10px 20px;
   margin: 5px 2px;
-  background: #000;
+  background: #004AAD;
   display: inline-block;
   color: #fff;
   border-radius: 3px 3px 0px 0px;
-  box-shadow: 0 0.5rem 0.8rem #00000080;
+  /* box-shadow: 0 0.5rem 0.8rem #00000080; */
   border-color: aqua;
 }
 #aiml-tabs .panels {
@@ -126,7 +126,8 @@
 /* Individual panel styles */
 .panel {
   background-color: white;
-  color: black;
+  color: #004AAD;
+  
 }
 
 .panel p {
@@ -141,7 +142,7 @@
 .custom-section {
   height: 8vh;
   width: 100%;
-  background-color: black;
+  background-color: #004AAD;
 }
 #slider {
   position: relative;
@@ -151,8 +152,6 @@
   height: 500px;
   margin-top: 0px; /* Center the slider */
   margin-left: -10px;
-
-
 }
 
 .slider-image {
@@ -178,21 +177,9 @@
 #nextBtn {
   right: 10px;
 }
-/* #news-container {
-  padding: 10px;
-  float: right;
-  width: 503px;
-  height: 525px;
-  background-color: rgb(255, 254, 173);
-  overflow: hidden;
-}
 
-.paragraph li {
-  color: black;
-  border-bottom: 2px solid rgb(0, 0, 0);
-  padding: 10px;
-  overflow: hidden;
-} */
+/* Sldier */
+
 /* Media queries For entire webiste */
 /* Show mobile image on screens smaller than 768px (typical tablet and mobile sizes) */
 @media only screen and (max-width: 768px) {
@@ -250,9 +237,3 @@
     font-size: 14px !important;
   }
 } */
-
-.slider-news {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
