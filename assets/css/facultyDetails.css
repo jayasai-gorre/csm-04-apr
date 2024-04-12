@@ -10,11 +10,13 @@
     text-align: center;
     font-size: 16px;
     white-space: nowrap;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
 }
 
 .faculty-table th {
-    background-color: #e54530;
     color: #ffffff;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(120, 13, 13) 100%);;
 }
 
 .faculty-profile:nth-child(even) {

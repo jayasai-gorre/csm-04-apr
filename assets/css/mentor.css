@@ -20,11 +20,13 @@
     border: 1px solid #ddd;
     text-align: center;
     font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
 }
 
 .mentor-table-header {
-    background-color: #e93a23;
     color: #ffffff;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(120, 13, 13) 100%);
 }
 
 .mentor-table tbody tr:nth-child(even) {

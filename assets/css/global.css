@@ -587,8 +587,10 @@ p{
 	position:relative;
 	line-height:1.7em;
 	font-size:var(--font-16);
-	color:var(--text-color);
-	font-family: var(--font-family-roboto);
+	color: black;
+	font-family: "Poppins", sans-serif;
+  	font-weight: 400;	
+	font-weight: 18px;
 }
 
 /* Typography */
@@ -615,6 +617,8 @@ h4{
 	line-height:1.4em;
 	font-weight:700;
 	font-size:var(--font-24);
+	font-size: 30px;
+    color: #682121 !important;
 }
 
 h5{
@@ -1368,6 +1372,7 @@ img{
 
 .sec-title h2{
 	margin-bottom:18px;
+	color: #682121;
 }
 
 .sec-title.light .text,
